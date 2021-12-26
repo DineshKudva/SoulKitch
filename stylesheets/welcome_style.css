@@ -1,0 +1,326 @@
+:root {
+  --primary: rgba(0, 0, 0, 0.7);
+  --secondary: rgba(0, 0, 0, 0.7);
+}
+
+/* style for the welcome page */
+
+.head_background .head_container .web_nav .greetings {
+  margin-right: 1rem;
+}
+
+.head_background .head_container .web_nav .logout,
+.head_background .head_container .web_nav .user-rec,
+.head_background .head_container .web_nav .add-rec {
+  margin-right: 1rem;
+  padding: 0.3rem 1rem;
+}
+
+.head_background .head_container .web_nav a .logout:hover,
+.head_background .head_container .web_nav .user-rec:hover,
+.head_background .head_container .web_nav .add-rec:hover {
+  cursor: pointer;
+  background-color: white;
+  color: crimson;
+  font-weight: 600;
+  border: none;
+  border-radius: 5px;
+  letter-spacing: 1.5px;
+  transition: 0.4s;
+}
+
+.main-body {
+  width: 100%;
+  margin: 0;
+  padding: 5rem 0 0;
+  background: linear-gradient(90deg, var(--primary), var(--secondary)),
+    url("../images/body_img5.jpg") no-repeat center center;
+  background-size: cover;
+}
+
+.recipe_container {
+  box-sizing: border-box;
+  width: 80%;
+  background: rgba(48, 9, 9, 0.5);
+  border-radius: 35px;
+  padding: 0;
+  margin: 0 auto 3rem;
+}
+
+.recipe_container .search-container {
+  width: 80%;
+  padding: 2.5rem 2.5rem 0;
+  margin: 0 auto 1rem;
+}
+
+.recipe_container .search-container .recipe-header {
+  text-align: center;
+  font-size: 3.1rem;
+}
+
+.recipe_container .search-container .recipe-sub-head {
+  text-align: center;
+  font-size: 2.1rem;
+  font-weight: 500;
+}
+
+.recipe_container .search-container .search-inp {
+  display: block;
+  width: 80%;
+  margin: 0rem auto 2rem;
+  padding: 0.8rem 1rem;
+  font-size: 1.2rem;
+  color: crimson;
+  border: none;
+  border-radius: 5px;
+}
+
+.recipe_container .search-container .search-btn {
+  background: none;
+  margin: 0rem auto 1rem;
+  display: block;
+  border: none;
+  padding: 0.5rem 1rem;
+  font-size: 1.8rem;
+  border-radius: 5px;
+  font-weight: 600;
+  color: white;
+  cursor: pointer;
+}
+
+.recipe_container .search-container .search-btn:hover {
+  background: aliceblue;
+  color: crimson;
+  letter-spacing: 1px;
+  transition: 0.4s;
+}
+
+.recipe_container .search-container input:focus {
+  outline: none;
+}
+
+.recipe_container .search-container .error-msg {
+  display: none;
+  background: rgb(238, 119, 119);
+  text-align: center;
+  border: 5px solid rgb(226, 24, 24);
+  border-radius: 8px;
+  padding: 0.5rem 0;
+  color: rgb(207, 22, 22);
+}
+
+.recipe_container .search-result {
+  /* border: 1px  solid white; */
+  padding: 1.5rem;
+}
+
+.recipe_container .search-result .food-info {
+  width: 55%;
+  padding: 1rem;
+  font-size: 1.2em;
+}
+
+.recipe_container .search-result .food-info h2,
+.recipe_container .search-result .food-info h3,
+.recipe_container .search-result .food-info h4{
+  font-weight: 600;
+}
+
+
+.recipe_container .search-result .food-img {
+  width: 45%;
+}
+
+.recipe_container .search-result .food-info .rvidlink,
+.recipe_container .search-result .food-info .rreflink {
+  display: none;
+  color: rgba(240, 248, 255, 0.6);
+  text-decoration: none;
+}
+.recipe_container .search-result .food-info .rreflink {
+  float: right;
+}
+
+.recipe_container .search-result .food-info .rvidlink:hover,
+.recipe_container .search-result .food-info .rreflink:hover {
+  text-decoration: underline;
+  color: aliceblue;
+  transition: 0.4s;
+}
+
+.recipe_container .search-result .food-img .rec-img {
+  display: none;
+  width: 80%;
+  margin: auto;
+  border-radius: 20px;
+}
+/* ------------------------------------------------------------------------------------------------------------------- */
+
+/* style for user-recipe page */
+
+.rec-background {
+  margin: 0;
+  padding: 3rem 0 0;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(90deg, var(--primary), var(--secondary)),
+    url("../images/body_img6.jpg") no-repeat center center;
+
+  background-size: cover;
+}
+
+.user-rec-search {
+  /* border: 1px solid white; */
+  width: 60%;
+  margin: 0 auto 5rem;
+  padding: 1rem;
+}
+
+.user-rec-search form #recipe {
+  color: crimson;
+  border: none;
+  text-align: center;
+  font-size: 1.5rem;
+  display: block;
+  border-radius: 5px;
+  padding: 0.7rem 1.3rem;
+  width: 80%;
+  margin: 0rem auto 1.5rem;
+}
+
+.user-rec-search form #recipe:focus {
+  outline: none;
+}
+
+.user-rec-search form .search-sub {
+  display: block;
+  padding: 0.8rem 1.5rem;
+  border: none;
+  font-size: 1.5rem;
+  font-weight: 500;
+  background: aliceblue;
+  color: crimson;
+  border-radius: 8px;
+  margin: auto;
+}
+
+.user-rec-search form .search-sub:hover {
+  color: rgb(247, 53, 92);
+  background: white;
+  letter-spacing: 2px;
+  transition: 0.4s;
+  cursor: pointer;
+}
+
+.user-rec-result {
+  width: 75%;
+  border: 1px solid white;
+  margin: 0 auto 3rem;
+  padding: 1.5rem 2rem;
+  border-radius: 15px;
+  background: aliceblue;
+  font-size: 1.2rem;
+  background: linear-gradient(45deg, #333333, #58111a, #d2122e, #dd1818);
+}
+
+.user-rec-result h1 {
+  color: aliceblue;
+  letter-spacing: 0.5px;
+}
+.user-rec-result h2 {
+  color: aliceblue;
+}
+
+.user-rec-result h3 {
+  font-weight: 500;
+  word-spacing: 1px;
+}
+
+.user-rec-result a {
+  color: aliceblue;
+  text-decoration: none;
+}
+
+.user-rec-result a:hover {
+  color: rgb(228, 61, 94);
+  text-decoration: underline;
+  transition: 0.4s;
+}
+/* ------------------------------------------------------------------------------------------------------------------- */
+/* style for add-recipe page */
+.add-rec-con {
+  margin: 0;
+  padding: 3rem 0 0;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(90deg, var(--primary), var(--secondary)),
+    url("../images/body_img7.jpg") no-repeat center center;
+  background-size: cover;
+}
+
+.rec-background .rec-search-head,
+.add-rec-con .add-rec-head {
+  width: 70%;
+  text-align: center;
+  margin: 0 auto 2rem;
+  font-size: 1.5em;
+}
+
+.rec-background .rec-search-head h1,
+.rec-background .rec-search-head h2,
+.add-rec-con .add-rec-head h1,
+.add-rec-con .add-rec-head h2{
+  font-weight: 600;
+}
+
+.add-rec-con .add-rec-form {
+  width: 60%;
+  border: none;
+  border-radius: 25px;
+  background: rgba(0, 0, 0, 0.4);
+  margin: 0 auto 3rem;
+  padding: 1.5rem;
+  color: black;
+}
+.add-rec-con .add-rec-form h1{
+  font-size: 2.9em;
+  font-weight: 600;
+}
+
+.add-rec-con .add-rec-form h2{
+  font-size: 1.8em;
+  font-weight: 400;
+}
+
+.add-rec-form div {
+  padding: 1rem;
+}
+
+.add-rec-form div input,
+.add-rec-form div textarea {
+  display: block;
+  border: none;
+  border-radius: 8px;
+  color: rgb(56, 56, 56);
+  font-size: 1.2rem;
+  padding: 1rem;
+  width: 95%;
+  margin: auto;
+}
+
+.add-rec-form div .add-rec-sbt {
+  width: fit-content;
+  padding: 0.7rem 3.5rem;
+  font-size: 1.5rem;
+  font-weight: 700;
+  color: aliceblue;
+  background: rgb(117, 18, 18);
+}
+
+.add-rec-form div .add-rec-sbt:hover {
+  color: white;
+  background: rgb(199, 51, 51);
+  letter-spacing: 2px;
+  transition: 0.4s;
+  cursor: pointer;
+}

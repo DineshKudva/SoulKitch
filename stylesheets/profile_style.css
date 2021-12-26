@@ -1,0 +1,87 @@
+.profile-back {
+  box-sizing: border-box;
+  width: 100%;
+  margin: 0;
+  padding: 2.5rem 0 0 0;
+  background: linear-gradient(90deg, var(--primary), var(--secondary)),
+    url("../images/body_img8.jpg") no-repeat center center;
+  background-size: cover;
+  height: fit-content;
+}
+
+.container-flex2 {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+section .profile-cont {
+  box-sizing: border-box;
+  width: 75%;
+  padding: 2rem 0;
+  margin: auto;
+}
+
+
+section .profile-cont .user_det {
+  width: 60%;
+  margin: 2rem auto;
+  border-radius: 10px;
+}
+
+section .profile-cont .user_det form {
+  box-sizing: border-box;
+  width: 90%;
+  margin: auto;
+}
+
+section .profile-cont .user_det form .form_heading h2 {
+  font-size: 3em;
+  font-weight: 600;
+}
+
+section .profile-cont .user_det form .form_heading h2 img{
+  color: aliceblue;
+}
+
+section .profile-cont .user_det form h3{
+  font-size: 1.5em;
+  font-weight: 500;
+}
+
+section .profile-cont .user_det .form_input {
+  border: none;
+  padding: 0.5rem 0.5rem;
+  border-radius: 5px;
+  background-color: aliceblue;
+  margin-bottom: 2rem;
+}
+
+section .profile-cont .user_det .form_input input {
+  border: none;
+  font-size: 1.5rem;
+  background: aliceblue;
+  color: rgb(59, 59, 59);
+  width: 100%;
+}
+
+section .profile-cont .user_det .form_sub input {
+  border: none;
+  font-size: 1.5rem;
+  width: fit-content;
+  padding: 0.5rem 2.3rem;
+  border-radius: 8px;
+  background-color: rgb(112, 36, 36);
+  font-weight: 600;
+  cursor: pointer;
+}
+section .profile-cont .user_det .form_sub input:hover {
+  background: crimson;
+  letter-spacing: 1px;
+  transition: 0.4s;
+}
+
+section .profile-cont .user_det input:focus {
+  outline: none;
+}
