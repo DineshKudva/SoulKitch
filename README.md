@@ -1,5 +1,5 @@
 # SoulKitch
-A website to find all the recipes you'll ever need to satisfy your cravings
+A website to find all the recipes you'll ever need to satisfy your cravings **Enter**
 To view the workings of this web project:
  "download the folder in the htdocs folder inside your xampp folder"
  "open the xampp control panel and start the apache server and mysql connection"
